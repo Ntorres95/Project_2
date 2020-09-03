@@ -59,6 +59,7 @@ Dropped any duplicate listings/dates, only keeping the latest ones.
 Important columns: "id", "listing_url", "name", "price_y", "number_of_reviews", "review_scores_rating", "date", "available"
 
 Load
+
 We decided to choose 2 tables for the end product: reviews and listings, where listings was a joined table between “calendar” and “listings”.
 We decided on formatting the information into these 2 tables with the following reasons:
 1. We wanted one table, listings, to show the quick summary information that we thought our hypothetical clients wanted to see, so that they could make a quick decision to bookings.
