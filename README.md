@@ -2,7 +2,7 @@
 
 ETL Code Jupyter Notebook contains our main code.
 
-Extract - sources of data that we extracted from 
+# Extract 
 
 Data sources are taken from an existing Kaggle account. CSV files are saved in our “Resources” folder in our Github repository. There are a total of three CSV files, listings.csv, calendar.csv, and review.csv.
 To extract all of the csv files we “import pandas as pd” and use the “pd.read_csv(...)” function to transfer our files into a database.
@@ -22,7 +22,7 @@ Extracting the CSV files into a dataframe allowed us view the data sets in its e
 
 
 
-Transform
+# Transform
 
 We took our data from the three CSV files - Reviews, Listings, Calendar - and created a set of rules or objectives in order to transform them into what we wanted.  
 Our objective was to create a list of top-rated airbnb listings in and around Boston with relevant booking information for prospective, hypothetical clients.
@@ -58,8 +58,7 @@ Filtered data, leaving listings with ratings greater than 90.
 Dropped any duplicate listings/dates, only keeping the latest ones.
 Important columns: "id", "listing_url", "name", "price_y", "number_of_reviews", "review_scores_rating", "date", "available"
 
-Load
-
+# Load
 We decided to choose 2 tables for the end product: reviews and listings, where listings was a joined table between “calendar” and “listings”.
 We decided on formatting the information into these 2 tables with the following reasons:
 1. We wanted one table, listings, to show the quick summary information that we thought our hypothetical clients wanted to see, so that they could make a quick decision to bookings.
